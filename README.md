@@ -1,4 +1,4 @@
-# GeoPilot — Your Geospatial Research Companion
+## GeoPilot: Your Geospatial Research Companion
 
 > Navigate Data. Discover Insights.
 
