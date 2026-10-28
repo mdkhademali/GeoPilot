@@ -1,0 +1,18 @@
+167.6 KB  dist/assets/citations-B33nq5sU.js
+151.1 KB  dist/assets/styles-O6pnk7Rt.js
+133.7 KB  dist/assets/CoordinateTool-ClhSeOpz.js
+11.6 KB  dist/assets/sidepanel-DxxDZNWN.js
+9.5 KB  dist/assets/WorkflowsView-CfUDNF4j.js
+9.3 KB  dist/assets/ResearchView-BhnKAeSQ.js
+8.4 KB  dist/assets/SnippetsView-CdO9s1VV.js
+7.0 KB  dist/assets/ResourcesView-pAp8L311.js
+6.8 KB  dist/assets/IndexLab-CD87oEie.js
+5.5 KB  dist/assets/GeoJsonTool-lI8W6EbA.js
+4.6 KB  dist/assets/popup-Bmz5-GV4.js
+3.0 KB  dist/assets/Settings-DKEPHgrf.js
+2.6 KB  dist/assets/CitationsView-C7i_6p_U.js
+1.0 KB  dist/background.js
+0.8 KB  dist/assets/messaging-Cj3-tGvy.js
+0.3 KB  dist/assets/external-link-BOiIMKSt.js
+0.2 KB  dist/assets/useDebounce-C-ArZENI.js
+TOTAL dist: 543.6 KB, JS: 523.0 KB

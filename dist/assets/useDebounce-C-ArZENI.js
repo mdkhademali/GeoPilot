@@ -1,0 +1,1 @@
+import{w as e}from"./styles-O6pnk7Rt.js";var t=e();function n(e,n=200){let[r,i]=(0,t.useState)(e);return(0,t.useEffect)(()=>{let t=setTimeout(()=>i(e),n);return()=>clearTimeout(t)},[e,n]),r}export{n as t};

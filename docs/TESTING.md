@@ -1,0 +1,3 @@
+# Testing
+`npm test` runs Vitest (jsdom). Coverage: coordinate conversions (known reference values, round trips, ranges), UTM validation, all eight spectral indices incl. zero denominators and invalid input, GeoJSON validation, storage serialization/import validation/migration, search, BibTeX/RIS/JSON export and import, Crossref mapping and error handling (404, 429, 5xx, network, bad JSON), and component interactions (coordinates, index lab, GeoJSON tool, resource hub search/favorites).
+Not covered: real Chrome runtime behaviour (popup, side panel, page capture, storage events). Perform the manual checklist in the README before publishing.

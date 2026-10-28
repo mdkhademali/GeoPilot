@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --bg: #f6f8fb;
+  --surface: #fff;
+  --surface2: #eef2f7;
+  --border: #d8e0ea;
+  --text: #0b1b33;
+  --muted: #52627a;
+  --accent: #1d5fd1;
+  --accent-fg: #fff;
+  --teal: #0d9488;
+  --danger: #b42318;
+  --ok: #067647;
+  --ring: #1d5fd1;
+}
+[data-theme='dark'] {
+  --bg: #0a1628;
+  --surface: #10213a;
+  --surface2: #173052;
+  --border: #243b5e;
+  --text: #e8eef8;
+  --muted: #9db0cc;
+  --accent: #5b9bff;
+  --accent-fg: #06142b;
+  --teal: #2dd4bf;
+  --danger: #ff8a80;
+  --ok: #5fd99a;
+  --ring: #5b9bff;
+}
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+*:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+@layer components {
+  .gp-card {
+    @apply rounded-lg p-3;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .gp-btn {
+    @apply inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-[12px] font-medium transition-colors;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .gp-btn:hover {
+    background: var(--border);
+  }
+  .gp-btn-primary {
+    background: var(--accent);
+    color: var(--accent-fg);
+    border-color: var(--accent);
+  }
+  .gp-btn-primary:hover {
+    filter: brightness(1.08);
+    background: var(--accent);
+  }
+  .gp-btn-danger {
+    color: var(--danger);
+  }
+  .gp-input {
+    @apply w-full rounded-md px-2.5 py-1.5 text-[12px];
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .gp-label {
+    @apply mb-1 block text-[11px] font-medium;
+    color: var(--muted);
+  }
+  .gp-muted {
+    color: var(--muted);
+  }
+  .gp-tag {
+    @apply rounded px-1.5 py-0.5 text-[10px];
+    background: var(--surface2);
+    color: var(--muted);
+  }
+  .gp-err {
+    color: var(--danger);
+  }
+  .gp-ok {
+    color: var(--ok);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .gp-fade {
+    animation: fade 0.15s ease-out;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(2px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
